@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOS REC'HINOS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/estyle.css">
+
+    <link rel="icon" href="img/0.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <img class="logo-1" src="img/2.jpg" alt="Logo Los Rec'hinos">
+        <div class="menu container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <p class="los">LOS REC'HINOS</p>
+                <img src="images/menu.png" class="menu-icono" alt="Menú">
+            </label>
+
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="1.html">Menú</a></li>
+                        <li><a href="galeria.html"> Galería</a></li>
+                        <li><a href="men.html">Información </a></li>
+                        <li><a href="whats.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="img/1.png" alt="Logo Los Rec'hinos">
+            </nav>
+        </div>
+    </header>
+
+    <section class="header-content container">
+        <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Chiles en Nogada</h1>
+                            <p>¡Pruébalo ya!</p>
+                            <div class="botones">
+                                <a href="1.html" class="btn-1">Menú</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/R.jpg" alt="Chiles en Nogada">
+                        </div>
+                    </div>
+                </div>
+                <!-- Más diapositivas aquí -->
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Tinga de Pollo</h1>
+                            <p>¡Prueba nuestro delicioso platillo!</p>
+                            <div class="botones">
+                                <a href="1.html" class="btn-1">Menú</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/2012.jpg" alt="Tinga de Pollo">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Mole Poblano</h1>
+                            <p>¡Pruébalo ya!</p>
+                            <div class="botones">
+                                <a href="1.html" class="btn-1">Menú</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/OIP.jpg" alt="Mole Poblano">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+   
+
+    <!-- Otras secciones y contenido adicional aquí -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('header');
+            if (window.scrollY > 0) {
+                header.classList.add('ocultar');
+            } else {
+                header.classList.remove('ocultar');
+            }
+        });
+    </script>
+</body>
+
+</html>

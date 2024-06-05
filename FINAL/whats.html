@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/estyle.css">
+    <link rel="icon" href="img/0.png" type="img/0.png"> 
+    <style>
+
+        /* Estilos CSS para mejorar la apariencia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F18919;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header {
+            width: 100%;
+            background-color: #030303;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav > li {
+            margin: 0 15px;
+        }
+
+        .nav li a {
+            color: #F18919;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .nav li a:hover {
+            background-color: #F18919;
+            color: #030303;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(3, 3, 3, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #4caf50;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            </li><li><a href="1.html">Menú</a></li>
+          <li><a href="galeria.html">Galería</a>
+            <li><a href="men.html">Información</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Preguntas o pedidos</h2>
+        <form action="https://formspree.io/f/moqgoneb" method="post" placeholder="pon tu nombre" required>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+    <a href="https://api.whatsapp.com/send?phone=+52 3327132981&text=Hola%21%20Quisiera%20más%20información%20sobre%20los%20pedidos%20" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    
+</body>
+
+</html>
